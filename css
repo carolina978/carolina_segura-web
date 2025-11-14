@@ -10,7 +10,10 @@ body {
     background: #f4f7fb;
     color: #222;
     line-height: 1.6;
+    margin: 0;
+    padding: 0;
 }
+
 
 /* CONTENEDOR */
 .container {
