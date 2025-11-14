@@ -1,197 +1,60 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <title>Carolina Segura - Hoja de Vida</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
+body {
+    font-family: system-ui, Arial, sans-serif;
+    background: #f4f7fb;
+    color: #222;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
 
-    <header class="header">
-        <div class="container header-content">
-            <div>
-                <h1>Carolina Segura</h1>
-                <p class="subtitle">Tecnóloga en Análisis y Desarrollo de Sistemas de Información</p>
-                <p class="tagline">Diseño Web | Gestión de Proyectos TI | Soluciones Tecnológicas</p>
-                <a href="#contacto" class="btn-primario">Contáctame</a>
-            </div>
+header {
+    background: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 2px solid #e5e5e5;
+}
 
-            <figure class="perfil">
-                <img src="img/carolina.jpg" alt="Foto de Carolina Segura">
-                <figcaption>Hoja de Vida Profesional</figcaption>
-            </figure>
-        </div>
-    </header>
+header img {
+    width: 150px;
+    border-radius: 50%;
+}
 
-    <nav class="nav-principal">
-        <div class="container">
-            <ul>
-                <li><a href="#sobre-mi">Sobre mí</a></li>
-                <li><a href="#experiencia">Experiencia</a></li>
-                <li><a href="#educacion">Educación</a></li>
-                <li><a href="#habilidades">Habilidades</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </div>
-    </nav>
+nav {
+    background: #003366;
+}
 
-    <main class="container">
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+}
 
-        <!-- SOBRE MI -->
-        <section id="sobre-mi" class="seccion">
-            <h2>Sobre mí</h2>
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
 
-            <div class="grid-2">
-                <div>
-                    <p>
-                        ¡Hola! Soy <strong>Carolina Segura</strong>, apasionada por la tecnología, el diseño web 
-                        y la gestión de proyectos de TI. Me gusta crear soluciones que sean 
-                        <em>claras, útiles y visualmente agradables</em> para los usuarios.
-                    </p>
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
 
-                    <p>
-                        Actualmente curso el programa de <strong>Ingenieria de Sistemas</strong> en UCompensar, 
-                        fortaleciendo mis conocimientos en desarrollo web, bases de datos 
-                        y buenas prácticas de programación.
-                    </p>
-                </div>
+nav ul li a:hover {
+    text-decoration: underline;
+}
 
-                <div class="datos-basicos">
-                    <h3>Datos básicos</h3>
-                    <ul>
-                        <li><strong>Nombre:</strong> Carolina Segura</li>
-                        <li><strong>Ciudad:</strong> Bogotá, Colombia</li>
-                        <li><strong>Correo:</strong> carolina.segura@example.com</li>
-                        <li><strong>Perfil:</strong> Estudiante ADSI | Líder de proyectos TI</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+section {
+    padding: 40px;
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
 
-        <!-- EXPERIENCIA -->
-        <section id="experiencia" class="seccion">
-            <h2>Experiencia Laboral</h2>
-
-            <div class="card">
-                <h3>Directora de Proyectos TI</h3>
-                <p class="lugar-periodo">Performance IT Solutions SAS | 2020 - Actualidad</p>
-                <ul>
-                    <li>Liderazgo de proyectos de infraestructura, ciberseguridad y centros de datos.</li>
-                    <li>Coordinación de equipos técnicos multidisciplinarios.</li>
-                    <li>Gestión de clientes corporativos y documentación técnica.</li>
-                </ul>
-            </div>
-
-            <div class="card">
-                <h3>Consultora de Soluciones Tecnológicas</h3>
-                <p class="lugar-periodo">Proyectos independientes</p>
-                <ul>
-                    <li>Implementación de soluciones de backup, redes y arquitecturas TI.</li>
-                    <li>Acompañamiento técnico en procesos de adopción tecnológica.</li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- EDUCACION -->
-        <section id="educacion" class="seccion">
-            <h2>Educación</h2>
-
-            <div class="card">
-                <h3>Tecnología en Análisis y Desarrollo de Sistemas de Información</h3>
-                <p class="lugar-periodo">Fundación Universitaria Compensar</p>
-                <p>Énfasis en desarrollo web, bases de datos y análisis de requerimientos.</p>
-            </div>
-        </section>
-
-        <!-- HABILIDADES -->
-        <section id="habilidades" class="seccion">
-            <h2>Habilidades Técnicas</h2>
-
-            <table class="tabla-habilidades">
-                <thead>
-                    <tr>
-                        <th>Competencia</th>
-                        <th>Nivel</th>
-                        <th>Uso principal</th>
-                    </tr>
-                </thead>
-
-                <tbody>
-                    <tr>
-                        <td>HTML5 &amp; CSS3</td>
-                        <td>Intermedio</td>
-                        <td>Construcción de sitios web responsivos.</td>
-                    </tr>
-
-                    <tr>
-                        <td>Git &amp; GitHub</td>
-                        <td>Intermedio</td>
-                        <td>Control de versiones y despliegue web.</td>
-                    </tr>
-
-                    <tr>
-                        <td>Gestión de Proyectos</td>
-                        <td>Avanzado</td>
-                        <td>Coordinación, documentación y seguimiento de proyectos.</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-
-        <!-- PROYECTOS -->
-        <section id="proyectos" class="seccion">
-            <h2>Proyectos Destacados</h2>
-
-            <div class="grid-3">
-                <article class="card proyecto">
-                    <h3>Portafolio Web</h3>
-                    <p>Sitio web profesional creado como presentación personal y portafolio.</p>
-                </article>
-
-                <article class="card proyecto">
-                    <h3>Gestión de Backup</h3>
-                    <p>Soluciones de respaldo y recuperación ante desastres.</p>
-                </article>
-
-                <article class="card proyecto">
-                    <h3>Centro de Datos</h3>
-                    <p>Proyectos de infraestructura, virtualización y disponibilidad.</p>
-                </article>
-            </div>
-        </section>
-
-        <!-- CONTACTO -->
-        <section id="contacto" class="seccion">
-            <h2>Contacto</h2>
-
-            <form class="form-contacto">
-                <div class="fila-form">
-                    <label for="nombre">Nombre</label>
-                    <input type="text" id="nombre" placeholder="Ingresa tu nombre">
-                </div>
-
-                <div class="fila-form">
-                    <label for="email">Correo</label>
-                    <input type="email" id="email" placeholder="correo@ejemplo.com">
-                </div>
-
-                <div class="fila-form">
-                    <label for="mensaje">Mensaje</label>
-                    <textarea id="mensaje" rows="4" placeholder="Escribe tu mensaje..."></textarea>
-                </div>
-
-                <button type="submit" class="btn-secundario">Enviar mensaje</button>
-            </form>
-        </section>
-
-    </main>
-
-    <footer class="footer">
-        <div class="container footer-content">
-            <p>&copy; 2025 Carolina Segura - Todos los derechos reservados</p>
-        </div>
-    </footer>
-
-</body>
-</html>
+h1, h2, h3 {
+    color: #003366;
+}
