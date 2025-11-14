@@ -1,0 +1,209 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, Arial, sans-serif;
+    background: #f4f7fb;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* CONTENEDOR */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* HEADER */
+.header {
+    background: linear-gradient(135deg, #1b74d4, #4f46e5);
+    color: #fff;
+    padding: 3rem 1rem;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.header h1 {
+    font-size: 2.4rem;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+}
+
+.tagline {
+    margin: 0.5rem 0 1rem;
+    max-width: 400px;
+}
+
+/* BOTONES */
+.btn-primario, .btn-secundario {
+    padding: 0.7rem 1.4rem;
+    font-weight: bold;
+    border-radius: 999px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-primario {
+    background: #fff;
+    color: #1b74d4;
+}
+
+.btn-secundario {
+    background: #1b74d4;
+    color: #fff;
+}
+
+/* IMAGEN DE PERFIL */
+.perfil img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #fff;
+}
+
+/* NAV */
+.nav-principal {
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.nav-principal ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.nav-principal li {
+    margin: 0.5rem 1rem;
+}
+
+.nav-principal a {
+    color: #333;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.nav-principal a:hover {
+    color: #1b74d4;
+}
+
+/* SECCIONES */
+.seccion {
+    padding: 3rem 0;
+}
+
+.seccion h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+/* GRID */
+.grid-2 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+/* CARDS */
+.card {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 0.8rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    margin-bottom: 1.2rem;
+}
+
+.lugar-periodo {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* TABLA */
+.tabla-habilidades {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 0.8rem;
+    overflow: hidden;
+}
+
+.tabla-habilidades thead {
+    background: #1b74d4;
+    color: #fff;
+}
+
+.tabla-habilidades th,
+.tabla-habilidades td {
+    padding: 0.8rem;
+    border-bottom: 1px solid #eee;
+}
+
+/* FORMULARIO */
+.form-contacto {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 0.8rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    max-width: 600px;
+}
+
+.fila-form {
+    margin-bottom: 1rem;
+}
+
+.fila-form label {
+    display: block;
+    margin-bottom: 0.3rem;
+    font-weight: 500;
+}
+
+.fila-form input,
+.fila-form textarea {
+    width: 100%;
+    padding: 0.7rem;
+    border-radius: 0.5rem;
+    border: 1px solid #ccc;
+}
+
+/* FOOTER */
+.footer {
+    background: #111827;
+    color: #eee;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 2rem;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    .header-content {
+        text-align: center;
+        justify-content: center;
+    }
+
+    .grid-2, .grid-3 {
+        grid-template-columns: 1fr;
+    }
+}
